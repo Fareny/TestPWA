@@ -1,6 +1,6 @@
 {
-    "name": "Transport",
-    "short_name": "Transport",
+    "name": "CordYard",
+    "short_name": "CordYard",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#202020",

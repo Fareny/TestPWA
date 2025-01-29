@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Transport",
-  description: "Progressive Web App with Next.js",
+  title: "CordYard",
+  description: "Мы создаём технологии, которые делают логистику точной и предсказуемой",
   themeColor: "#202020"
 };
 
