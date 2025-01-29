@@ -5,17 +5,11 @@ import { useServerInsertedHTML } from "next/navigation";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
 export default function StyledComponentsRegistry({ children }: { children: React.ReactNode }) {
-    const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet());
+    const [sheet] = useState(() => new ServerStyleSheet());
 
     useServerInsertedHTML(() => {
-        const styles = styledComponentsStyleSheet.getStyleElement();
-        styledComponentsStyleSheet.seal();
-        return <>{styles}</>;
+        return <>{sheet.getStyleElement()}</>;
     });
 
-    return (
-        <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-            {children}
-        </StyleSheetManager>
-    );
+    return <StyleSheetManager sheet={sheet.instance}>{children}</StyleSheetManager>;
 }
