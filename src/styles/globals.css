@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    box-sizing: border-box;
+    transition:
+        background-color 0.3s linear,
+        border-color 0.3s linear,
+        box-shadow 0.1s linear;
+}

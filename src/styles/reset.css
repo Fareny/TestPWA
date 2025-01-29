@@ -1,0 +1,103 @@
+/* --------------------------------------------------------------------------
+   reset.css — базовый сброс стилий (Eric Meyer Reset 2.0)
+   URL: https://meyerweb.com/eric/tools/css/reset/
+   Взято за основу и адаптировано при необходимости
+----------------------------------------------------------------------------*/
+
+/* Убираем отступы и поля для всех элементов */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Включаем здравый бокс-модель для всех элементов (и псевдоэлементов) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Дополнительный сброс HTML5-элементов */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* Убираем список-стиль у ul/ol */
+ol, ul {
+  list-style: none;
+}
+
+/* Убираем стили подчеркивания у ссылок по умолчанию */
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit; /* чтобы наследовать цвет текста из окружения */
+}
+
+/* Убираем стили для изображений: делаем их блочными, чтобы избегать лишних отступов */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Убираем подчеркивание у вставленного (<ins>) текста 
+   и задаём общее наследование цвета подчеркиваний */
+ins {
+  text-decoration: none;
+}
+
+/* Убираем рамки у встроенных объектов и iframe */
+iframe, object, embed {
+  border: 0;
+}
+
+/* Убираем стили для кнопок, инпутов и прочих элементов форм:
+   (при желании можно удалить, если хотите оставить дефолтные стили) */
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Гарантированная высота строки для textarea */
+textarea {
+  resize: vertical; /* или none, если хотите отключить ресайз */
+}
+
+/* Убираем точку или стили при нажатии (outline) в разных браузерах */
+:focus {
+  outline: 0;
+}
+
+/* Сброс для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: normal;
+}
