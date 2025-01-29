@@ -1,34 +1,16 @@
 {
-    "name": "ERKON",
-    "short_name": "ERKON",
+    "name": "Transport",
+    "short_name": "Transport",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#202020",
     "background_color": "#202020",
+    "orientation": "portrait",
     "icons": [
-      {
-        "src": "favicon.ico",
-        "sizes": "48x48",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "512px.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any"
-      },
-      {
-        "src": "256px.png",
-        "type": "image/png",
-        "sizes": "256x256",
-        "purpose": "any"
-      },
-      {
-        "src": "128px.png",
-        "type": "image/png",
-        "sizes": "128x128",
-        "purpose": "any"
-      }
+        { "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" },
+        { "src": "/icons/512px.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+        { "src": "/icons/256px.png", "type": "image/png", "sizes": "256x256", "purpose": "any" },
+        { "src": "/icons/128px.png", "type": "image/png", "sizes": "128x128", "purpose": "any" }
     ]
-  }
+}
   
