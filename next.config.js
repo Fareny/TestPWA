@@ -1,10 +1,9 @@
 const withPWA = require('next-pwa')({
-  dest: 'public',
+  dest: '.next',
   register: true,
-  skipWaiting: true, 
+  skipWaiting: true,
 });
 
 module.exports = withPWA({
   reactStrictMode: true,
-  distDir: 'build'
 });
